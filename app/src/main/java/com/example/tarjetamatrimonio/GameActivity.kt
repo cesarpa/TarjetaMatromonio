@@ -9,6 +9,10 @@ import android.os.Bundle
 import android.view.MotionEvent
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.TextView
+
+
+
 
 class GameActivity : AppCompatActivity() {
 
@@ -26,6 +30,12 @@ class GameActivity : AppCompatActivity() {
                 )
             )
         }
+
+        val textView = TextView(this)
+        textView.textSize = 40f
+        textView.text = "text"
+
+        gameLayout.addView(textView)
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
