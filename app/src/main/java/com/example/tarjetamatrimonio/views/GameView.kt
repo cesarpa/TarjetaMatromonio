@@ -2,6 +2,7 @@ package com.example.tarjetamatrimonio.views
 
 import android.content.Context
 import android.view.SurfaceView
+import com.example.tarjetamatrimonio.R
 
 class GameView(context: Context) : SurfaceView(context), Runnable {
 
